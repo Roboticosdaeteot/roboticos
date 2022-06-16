@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+}
+#fundo_home{
+    background-image: url(imagens/fundo_roboticaa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: white;
+}
+.logo{
+    width: 20%;
+}
+img{
+    width: 100%;
+}
+
+.right{
+    float: right;
+}
+.nav-link {
+    color: aliceblue;
+}
+li {
+    color: white;
+  /*  width: 120px;
+    text-align: center;*/
+}
+#logo{
+    max-width: 100%;
+    height: auto;
+}
+.ham{
+    margin-right: 0px;
+}
+
+.inicio:hover{
+    color: rgb(234, 0, 255);
+}
+
+#titulo{
+    float: right;
+    margin-top: 18%;
+    margin-right: 2%;
+}
