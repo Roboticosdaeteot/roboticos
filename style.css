@@ -4,12 +4,15 @@
 
 nav {
     position: relative;
-    color: white;
+    color: rgb(252, 247, 247);
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
 }
+#cellmenu {
+    display: none;
+}
 #fundo_home{
-    background-image: url(imagens/fundo_roboticaa.png);
+    background-image: url(imagens/fundorobpc.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 95vh;
@@ -25,6 +28,11 @@ img{
 .nav-link {
     color: aliceblue;
 }
+.nav-link:hover {
+    text-decoration: underline;
+    color: #945af1;
+}
+
 li {
     color: white;
   /*  width: 120px;
@@ -35,12 +43,19 @@ li {
     height: auto;
 }
 
+
 #titulo{
     float: right;
     margin-top: 15%;
     margin-right: 7%;
     
 }
+#tit {
+    font-size: 50px;
+    font: bold;
+    margin-right: 50px;
+}
+
 .img-fluid{
     margin-left: 10%;
     width: 90%;
@@ -48,4 +63,122 @@ li {
 .collapse{
     margin-right: 5%;
     margin-top: 2%;
+}
+.row{
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+.center{
+    color: #013A63;
+}
+.imgindex{
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+#rob{
+    padding-top: 4%;
+                
+}
+.pad {
+    padding: 30px;
+}
+.textind {
+    font-size: 20px;
+}
+
+.xizin {
+    background-color: antiquewhite;
+}
+
+.fundin{
+    background-color: rgba(1, 39, 66, 0.849);
+}
+
+.azulzin {
+
+    background-color: #014F86;
+
+    margin: 0;
+
+    color: white;
+
+    padding-bottom: 100px;
+
+}
+
+.roxin {
+    margin-left: -30px;
+    text-align: center;
+    width: 400px;
+    color: white;
+    background-image: linear-gradient(to right, #7C2DF0, #C245EE);
+    padding: 5;
+}
+/*Celular*/
+
+@media (max-width: 576px) {
+    #pcmenu {
+        display: none;
+    }
+
+    #cellmenu {
+        position: inherit;
+        display: block;
+    }
+
+    #titulo {
+        margin-top: 9%;
+        margin-right: 0%;
+    }
+    #tit {
+        font-size: 22px;
+    }
+
+    .logo{
+        width: 28%;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #fundo_home {
+        height: 38vh;
+        background-color: rgb(76, 0, 255);
+    }
+}
+
+/*Tablet*/
+@media (min-width: 576px) and (max-width: 768px) {
+    #pcmenu {
+        display: none;
+    }
+
+    #cellmenu {
+        position: inherit;
+        display: block;
+    }
+
+    #titulo {
+        margin-top: 9%;
+        margin-right: 0%;
+    }
+    #tit {
+        font-size: 22px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    #fundo_home {
+        height: 47vh;
+        background-color: rgb(0, 255, 34);
+        background-size: 100%;
+    }
 }
