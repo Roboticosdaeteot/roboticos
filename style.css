@@ -54,6 +54,8 @@ li {
     font-size: 50px;
     font: bold;
     margin-right: 50px;
+
+    
 }
 
 .img-fluid{
@@ -73,6 +75,7 @@ li {
 }
 .center{
     color: #013A63;
+    margin-left: 3%;
 }
 .imgindex{
     border-radius: 5px;
@@ -80,10 +83,26 @@ li {
 }
 
 
-#rob{
-    padding-top: 4%;
-                
+.aumentadiv{
+    transition: all 0.5s;
+    cursor: pointer;
 }
+.aumentadiv:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+
+.centeroqe {
+    margin-left: 10px;
+    color: #013A63;
+}
+
+#rob{
+    padding-top: 3%;
+    margin-left: 2%;
+}
+
 .pad {
     padding: 30px;
 }
@@ -96,7 +115,7 @@ li {
 }
 
 .fundin{
-    background-color: rgba(1, 39, 66, 0.849);
+    background-color: rgba(24, 47, 97, 0.849);
 }
 
 .azulzin {
@@ -114,11 +133,54 @@ li {
 .roxin {
     margin-left: -30px;
     text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 400px;
     color: white;
     background-image: linear-gradient(to right, #7C2DF0, #C245EE);
     padding: 5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+#robozin {
+    width: 276px;
+}
+
+.iconin {
+    width: 50px;
+}
+
+.form-control {
+    background-color: #efebf0;
+}
+#botao {
+    background-image: linear-gradient(to right, #7C2DF0, #C245EE);
+    color: white;
+}
+
+.praqserve {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.praqserve:hover {
+    border-style: solid;
+    border-color: #C245EE;
+}
+
+.padcenter {
+    margin-top: 100px;
+    margin-bottom: 170px;
+}
+
+footer {
+    background-color: #013A63;
+}
+
 /*Celular*/
 
 @media (max-width: 576px) {
@@ -147,9 +209,26 @@ li {
         text-align: center;
     }
 
+    .padcenter {
+        margin-top: -20px;
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        background-color: #efebf0;
+    }
+    #botao {
+        background-color: #ed1b66;
+        color: white;
+    }
+
     #fundo_home {
         height: 38vh;
         background-color: rgb(76, 0, 255);
+    }
+    .centeroqe {
+        margin-left: 8px;
+        font-size: 35px;
     }
 }
 
@@ -169,11 +248,21 @@ li {
         margin-right: 0%;
     }
     #tit {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .center {
         text-align: center;
+    }
+
+    .iconin {
+        width: 40px;
+    }
+
+    #robozin {
+        margin-top: 90px;
+        margin-left: -60px;
+        width: 250px;
     }
 
     #fundo_home {
@@ -181,4 +270,17 @@ li {
         background-color: rgb(0, 255, 34);
         background-size: 100%;
     }
+}
+
+#fundo_atuacoes{
+    background-image: url(imagens/novamao.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 95vh;
+    color: white;
+    
+}
+
+#padatuacoes {
+    text-align: center;
 }
