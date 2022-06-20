@@ -12,12 +12,21 @@ nav {
     display: none;
 }
 #fundo_home{
-    background-image: url(imagens/fundorobpc.png);
+    background-image: url(imagens/novofundo.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 95vh;
     color: white;
 }
+
+#fundo_sobrenos{
+    background-image: url(imagens/testepessoas.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 95vh;
+    color: white;
+}
+
 .logo{
     width: 20%;
 }
@@ -43,20 +52,19 @@ li {
     height: auto;
 }
 
-
 #titulo{
     float: right;
     margin-top: 15%;
     margin-right: 7%;
-    
+
 }
 #tit {
     font-size: 50px;
     font: bold;
     margin-right: 50px;
-
-    
+    text-shadow: 0 0 5px black;
 }
+
 
 .img-fluid{
     margin-left: 10%;
@@ -92,6 +100,9 @@ li {
     transform: scale(1.2);
 }
 
+.textcent {
+    text-align: center;
+}
 
 .centeroqe {
     margin-left: 10px;
@@ -116,6 +127,10 @@ li {
 
 .fundin{
     background-color: rgba(24, 47, 97, 0.849);
+}
+
+.sublinhadin {
+    text-decoration: underline #9758F2;
 }
 
 .azulzin {
@@ -145,6 +160,12 @@ li {
 
 #robozin {
     width: 276px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#robozin:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .iconin {
@@ -155,8 +176,12 @@ li {
     background-color: #efebf0;
 }
 #botao {
-    background-image: linear-gradient(to right, #7C2DF0, #C245EE);
+    /*background-image: linear-gradient(to right, #7C2DF0, #C245EE);*/
     color: white;
+    background: linear-gradient(-45deg, #013A63, #c01ec5); 
+	background-size: 500%;
+	animation: anim-1 5s linear infinite;
+    
 }
 
 .praqserve {
@@ -177,8 +202,20 @@ li {
     margin-bottom: 170px;
 }
 
+.padcenter2 {
+   padding: center;
+}
+
 footer {
     background-color: #013A63;
+}
+
+
+/*Amimação do Botão*/
+@keyframes anim-1 {
+	0% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+   100% { background-position: 0% 50%; }
 }
 
 /*Celular*/
@@ -226,9 +263,18 @@ footer {
         height: 38vh;
         background-color: rgb(76, 0, 255);
     }
+
+    .semespaco {
+        margin-top: -170px;
+    }
+
     .centeroqe {
         margin-left: 8px;
-        font-size: 35px;
+        font-size: 28px;
+        text-align: center;
+    }
+    #rob {
+        font-size: 20px;
     }
 }
 
@@ -263,6 +309,11 @@ footer {
         margin-top: 90px;
         margin-left: -60px;
         width: 250px;
+
+    }
+
+    .semespaco {
+        margin-top: -170px;
     }
 
     #fundo_home {
@@ -278,9 +329,69 @@ footer {
     background-repeat: no-repeat;
     height: 95vh;
     color: white;
+    text-shadow: 0 0 5px black;
     
 }
 
 #padatuacoes {
     text-align: center;
+}
+
+
+
+/* Jogos */
+.jogo {
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.robo {
+    width: 150px; /*tamanho do vírus*/
+    position: absolute; /*p nenhuma interferir a outra*/
+    bottom: 0;
+    
+}
+
+.pulo {
+    animation: pulo 500ms ease-out;
+}
+
+.virus {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: virus-animation 1.5s infinite linear;
+}
+@keyframes virus-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes pulo  {
+    0%{
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px; /*p ele demorar um pouco no alto*/
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
