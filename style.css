@@ -19,7 +19,7 @@ nav {
     color: white;
 }
 
-#fundo_sobrenos{
+#fundo_sobrenos {
     background-image: url(imagens/testepessoas.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -171,6 +171,10 @@ li {
 .iconin {
     width: 50px;
 }
+#click {
+    color: #013A63;
+    margin-top: 1px;
+}
 
 .form-control {
     background-color: #efebf0;
@@ -259,11 +263,9 @@ footer {
         color: white;
     }
 
-    #fundo_home {
+    #fundo_home, #fundo_sobrenos {
         height: 38vh;
-        background-color: rgb(76, 0, 255);
     }
-
     .semespaco {
         margin-top: -170px;
     }
@@ -316,7 +318,7 @@ footer {
         margin-top: -170px;
     }
 
-    #fundo_home {
+    #fundo_home, #fundo_sobrenos, #fundo_atuacoes {
         height: 47vh;
         background-color: rgb(0, 255, 34);
         background-size: 100%;
