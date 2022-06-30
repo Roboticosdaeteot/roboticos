@@ -113,7 +113,9 @@ li {
     padding-top: 3%;
     margin-left: 2%;
 }
-
+#robpeq{
+    font-size: 0.8em;
+}
 .pad {
     padding: 30px;
 }
@@ -338,7 +340,7 @@ footer {
 #padatuacoes {
     text-align: center;
 }
-
+/*tô aqui*/
 
 
 /* Jogos */
