@@ -349,6 +349,7 @@ footer {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(rgb(0, 195, 255), rgb(214, 214, 247));
 }
 
 .robo {
