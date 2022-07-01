@@ -288,6 +288,9 @@ footer {
     #rob {
         font-size: 20px;
     }
+    .acessibilidade{
+        margin-top: -270px;
+    }
 }
 
 /*Tablet*/
@@ -330,7 +333,7 @@ footer {
 
     #fundo_home, #fundo_sobrenos, #fundo_atuacoes {
         height: 47vh;
-        background-color: rgb(0, 255, 34);
+        background-color: rgb(255, 255, 255);
         background-size: 100%;
     }
 }
