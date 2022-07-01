@@ -20,7 +20,7 @@ nav {
 }
 
 #fundo_sobrenos {
-    background-image: url(imagens/testepessoas.png);
+    background-image: url(imagens/fototodos\ -\ Copia.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 95vh;
@@ -177,7 +177,9 @@ li {
     color: #013A63;
     margin-top: 1px;
 }
-
+.contatua {
+    background-color: #013A63;
+}
 .form-control {
     background-color: #efebf0;
 }
@@ -215,7 +217,13 @@ li {
 footer {
     background-color: #013A63;
 }
+#nossoemail{
+    color: #0195ff;
+}
+#nossoemail:hover{
+    color: #C245EE;
 
+}
 
 /*Amimação do Botão*/
 @keyframes anim-1 {

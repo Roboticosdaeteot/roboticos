@@ -100,7 +100,7 @@
                 </div>
               </nav>
               <div id="titulo"> 
-                 <h1 id="tit">Divirta-se um pouco! </h1>
+                 <h1 id="tit" class="animate__animated animate__backInRight" >Divirta-se um pouco! </h1>
                  <h3>Em desenvolvimento..</h3>
             </div>
         </div>
@@ -131,14 +131,22 @@
 
           <div class="col-1">
 
-            <a href="mailto:roboticos.eteot@gmail.com"><img src="imagens/emailpng-removebg-preview.png" class="iconin"></a>
+            <div class="col-6">
+              <div class="col-3"><a href="mailto:roboticos.eteot@gmail.com"><img src="imagens/emailpng-removebg-preview.png" class="iconin"></a></div>
+              <div class="col-3"><a href="mailto:roboticos.eteot@gmail.com" id="click">roboticos.eteot@gmail.com</a></div>
+            </div>
 
-            <a target="_blank" href="https://github.com/roboticosdaeteot"><img src="imagens/github.png" class="iconin"> </a>
+            <div class="col-6">
+              <div class="col-3"><a target="_blank" href="https://github.com/roboticosdaeteot"><img src="imagens/github.png" class="iconin"></a></div>
+              <div class="col-3"><a target="_blank" href="https://github.com/roboticosdaeteot" id="click">github.com/Roboticosdaeteot</a></div>
+            </div>
 
-            <a href="jogo.html"><img src="imagens/robojoguecmg.png" id="robozin"></a> 
-              
+           <a href="jogo.html"><img src="imagens/robojoguecmg.png" id="robozin"></a>
 
-          </div>
+            
+
+        </div>
+          
 
       </div>
 
@@ -167,7 +175,7 @@
             </select>
           </div>
           <div class="col-12">
-            <textarea name="$Mensagem" id="conte" cols="30" rows="7" class="form-control" placeholder="Fale com a gente!" required></textarea>
+            <textarea name="$Mensagem" id="conte" cols="30" rows="7" class="form-control" placeholder="Fale com a gente... Pode mandar mensagem, que ficaremos muito felizes!" required></textarea>
           </div>
           <div class="col-12">
             <input type="submit" id="botao" class="btn form-control" value="Enviar">
@@ -189,6 +197,6 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
