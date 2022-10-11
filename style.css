@@ -379,22 +379,29 @@ body::-webkit-scrollbar {
     background: linear-gradient(rgb(0, 195, 255), rgb(214, 214, 247));
 }
 
-.robo {
-    width: 150px; /*tamanho do vírus*/
+#vivo, #morte {
+    width: 100px; /*tamanho do vírus*/
     position: absolute; /*p nenhuma interferir a outra*/
     bottom: 0;
-    
+}
+
+#morte {
+    width: 170px;
 }
 
 .pulo {
     animation: pulo 500ms ease-out;
 }
 
+#morte {
+    display: none;
+}
+
 .virus {
     position: absolute;
     bottom: 0;
-    width: 80px;
-    animation: virus-animation 1.5s infinite linear;
+    width: 140px;
+    animation: virus-animation 1.2s infinite linear;
 }
 @keyframes virus-animation {
     from {
