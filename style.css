@@ -183,6 +183,25 @@ li {
 .form-control {
     background-color: #efebf0;
 }
+
+#bt-pular {
+    margin: auto;
+    width: 150px;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(#0c619e, #014F86, #023458);
+    border-style: solid;
+    border-width: 10px;
+    border-color: #002138;
+    font-family: 'Silkscreen', cursive;
+    display: none;
+}
+
+#bt-pular:active {
+    background-image: linear-gradient(#023458, #014F86, #0c619e);
+    border-color: #01375e;
+}
+
 #botao {
     /*background-image: linear-gradient(to right, #7C2DF0, #C245EE);*/
     color: white;
@@ -304,6 +323,9 @@ body::-webkit-scrollbar {
     }
     .acessibilidade{
         margin-top: -270px;
+    }
+    #bt-pular {
+        display: block;
     }
 }
 
